@@ -1,0 +1,60 @@
+---
+import AppleIcon from "./AppleIcon.astro";
+---
+
+<section class="header">
+  <nav class="nav">
+    <AppleIcon class="logo" />
+    <ul class="nav-links">
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">Watch</a></li>
+      <li><a href="#">AirPods</a></li>
+      <li><a href="#">TV & Home</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+    <div class="search">🔍</div>
+  </nav>
+</section>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .search {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+</style>

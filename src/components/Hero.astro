@@ -8,6 +8,7 @@
 
 <script>
   import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,8 @@
     autoAlpha: 0,
     scrollTrigger: {
       scrub: 0.5,
+      start: "center center",
+      markers: true,
     },
   });
 </script>

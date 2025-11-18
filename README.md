@@ -1,10 +1,14 @@
 # AirPods Pro 2 - Hero Animation Clone
 
+![animation-hero-airpodspro2_1](https://github.com/user-attachments/assets/2065d1a2-f730-41cb-9288-6f9afb7c3f3c)
+
 Proyecto de aprendizaje enfocado en dominar animaciones con GSAP (GreenSock Animation Platform) y ScrollTrigger, recreando la animación del hero de la página oficial de Apple para los AirPods Pro 2.
 
 ## 🚀 Demo en Vivo
 
 [Ver proyecto desplegado](https://airpods-animation-eight.vercel.app)
+
+![animation-hero-airpodspro2_2](https://github.com/user-attachments/assets/fe91ddb0-3694-4df7-9df5-afbebcca9470)
 
 ## 🛠️ Tecnologías Utilizadas
 

@@ -1,43 +1,109 @@
-# Astro Starter Kit: Minimal
+# AirPods Pro 2 - Hero Animation Clone
 
-```sh
-npm create astro@latest -- --template minimal
+Proyecto de aprendizaje enfocado en dominar animaciones con GSAP (GreenSock Animation Platform) y ScrollTrigger, recreando la animación del hero de la página oficial de Apple para los AirPods Pro 2.
+
+## 🚀 Demo en Vivo
+
+[Ver proyecto desplegado](https://airpods-animation-eight.vercel.app)
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Astro** - Framework web moderno
+- **GSAP** - Librería de animación profesional
+- **ScrollTrigger** - Plugin de GSAP para animaciones basadas en scroll
+- **Canvas API** - Para renderizado de secuencia de imágenes
+- **HTML5 & CSS3** - Estructura y estilos
+
+## ✨ Características
+
+- ✅ Animación de secuencia de imágenes en Canvas sincronizada con scroll
+- ✅ Header dinámico que se oculta al hacer scroll
+- ✅ SubNav con efecto blur y background al hacer scroll
+- ✅ Animaciones de entrada suaves al cargar la página
+- ✅ Diseño responsive y fiel al original de Apple
+- ✅ Optimización de performance con 65 frames pre-cargados
+
+## 📦 Instalación y Desarrollo
+
+### Requisitos previos
+
+- Node.js (v16 o superior)
+- npm
+
+### Pasos para ejecutar localmente
+
+1. Clona el repositorio
+
+```bash
+git clone https://github.com/Fr4n0m/airpods-animation.git
+cd airpods-animation
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Instala las dependencias
 
-## 🚀 Project Structure
+```bash
+npm install
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+3. Inicia el servidor de desarrollo
 
-```text
+```bash
+npm run dev
+```
+
+4. Abre tu navegador en `http://localhost:4321`
+
+### Comandos disponibles
+
+| Comando           | Acción                                             |
+| ----------------- | -------------------------------------------------- |
+| `npm run dev`     | Inicia servidor de desarrollo en `localhost:4321`  |
+| `npm run build`   | Construye el proyecto para producción en `./dist/` |
+| `npm run preview` | Vista previa local del build de producción         |
+
+## 🎨 Estructura del Proyecto
+
+```
 /
 ├── public/
+│   └── images/          # Secuencia de 65 frames de AirPods
 ├── src/
+│   ├── components/
+│   │   ├── Header.astro    # Navegación principal y SubNav
+│   │   ├── Hero.astro      # Componente principal con Canvas
+│   │   └── SubNav.astro    # Navegación secundaria
 │   └── pages/
-│       └── index.astro
+│       └── index.astro     # Página principal
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 📚 Lo que aprendí
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Este proyecto me permitió profundizar en:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Manejo avanzado de **GSAP Timelines** para sincronizar múltiples animaciones
+- Uso de **ScrollTrigger** con `scrub` para animaciones fluidas vinculadas al scroll
+- Renderizado de secuencias de imágenes en **Canvas** con alta performance
+- Técnicas de **pre-carga de imágenes** para evitar parpadeos
+- Animaciones de entrada con `gsap.fromTo()` y control de `immediateRender`
+- Efectos de **backdrop-filter** y backgrounds dinámicos
+- Optimización de animaciones para mantener 60fps
 
-## 🧞 Commands
+## 🎯 Inspiración
 
-All commands are run from the root of the project, from a terminal:
+Este proyecto es un clon educativo de la página oficial de Apple para los AirPods Pro 2. Las imágenes y el diseño están inspirados en el sitio web original de Apple.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## ⚠️ Disclaimer
 
-## 👀 Want to learn more?
+Este proyecto ha sido creado únicamente con fines educativos y de aprendizaje. No tiene propósitos comerciales. Todas las imágenes y recursos visuales pertenecen a Apple Inc. y se utilizan bajo Fair Use exclusivamente para práctica de desarrollo web.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Apple, AirPods y AirPods Pro son marcas registradas de Apple Inc.**
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT para el código. Los recursos visuales y marcas pertenecen a sus respectivos propietarios.
+
+---
+
+Desarrollado por Francisco Rodríguez - 2025
+[Visitar Portfolio](https://codebyfran.es)

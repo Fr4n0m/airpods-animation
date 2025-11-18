@@ -6,7 +6,7 @@ import SubNav from "./SubNav.astro";
 ---
 
 <section class="header">
-  <nav class="nav">
+  <nav class="nav main-nav">
     <AppleIcon class="logo" />
     <ul class="nav-links">
       <li><a href="#">Tienda</a></li>
@@ -26,6 +26,53 @@ import SubNav from "./SubNav.astro";
 
   <SubNav />
 </section>
+
+<script>
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Timeline para sincronizar ambas animaciones
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "body",
+      start: "top top",
+      end: "+=1000",
+      scrub: 0.5,
+    },
+  });
+
+  // Oculta el main-nav
+  tl.to(
+    ".main-nav",
+    {
+      y: "-100%",
+    },
+    0
+  );
+
+  // Sube el subnav al mismo tiempo
+  tl.to(
+    ".subnav",
+    {
+      y: "-66px",
+      x: "-8px",
+      backdropFilter: "blur(20px)",
+      borderBottomWidth: 100,
+    },
+    0
+  );
+
+  // Oculta el border-bottom
+  tl.to(
+    ".subnav-container",
+    {
+      borderBottomWidth: 0,
+    },
+    0
+  );
+</script>
 
 <style>
   .header {

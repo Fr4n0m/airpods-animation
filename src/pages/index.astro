@@ -17,6 +17,12 @@ import Header from "../components/Header.astro";
     <Hero />
   </body>
 
+  <script>
+    import { initScrollInertia } from "../scripts/scrollInertia";
+
+    initScrollInertia();
+  </script>
+
   <style>
     body {
       font-family:
@@ -35,6 +41,7 @@ import Header from "../components/Header.astro";
       color: #fff;
       height: 5000px;
       font-size: 12px;
+      overscroll-behavior: none;
     }
   </style>
 </html>

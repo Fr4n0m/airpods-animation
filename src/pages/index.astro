@@ -19,12 +19,12 @@ import Header from "../components/Header.astro";
       <p class="disclaimer-copy">
         built by
         <a
-          class="disclaimer-link"
+          class="disclaimer-link disclaimer-author"
           href="https://codebyfran.es"
           target="_blank"
           rel="noopener noreferrer"
         >
-          fr4nom
+          Fr4n0m
         </a>
       </p>
       <span class="disclaimer-dot" aria-hidden="true"></span>
@@ -83,7 +83,7 @@ import Header from "../components/Header.astro";
       padding: 10px 16px;
       border-radius: 999px;
       border: 1px solid rgba(255, 255, 255, 0.14);
-      background: rgba(18, 18, 18, 0.6);
+      background: rgba(28, 28, 30, 0.42);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       box-shadow:
@@ -94,6 +94,14 @@ import Header from "../components/Header.astro";
       letter-spacing: 0.04em;
       text-transform: uppercase;
       z-index: 1200;
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .site-disclaimer:hover {
+      background: rgba(18, 18, 18, 0.68);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     .disclaimer-copy {
@@ -112,9 +120,13 @@ import Header from "../components/Header.astro";
     }
 
     .disclaimer-link {
-      color: #f5f5f7;
+      color: rgba(245, 245, 247, 0.92);
       text-decoration: none;
       transition: color 0.2s ease;
+    }
+
+    .disclaimer-author {
+      text-transform: none;
     }
 
     .disclaimer-github {
@@ -132,9 +144,7 @@ import Header from "../components/Header.astro";
     }
 
     .disclaimer-link:hover {
-      color: #2997ff;
-      text-decoration: underline;
-      text-underline-offset: 2px;
+      color: #8e8e93;
     }
 
     @media (max-width: 640px) {

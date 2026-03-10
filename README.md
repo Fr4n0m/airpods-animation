@@ -1,3 +1,5 @@
+<a id="es"></a>
+
 # AirPods Pro 2 Hero Animation Clone
 
 [![Astro](https://img.shields.io/badge/Astro-5.15.9-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
@@ -7,17 +9,19 @@
 [![Deploy](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://airpods-animation-eight.vercel.app)
 [![License](https://img.shields.io/badge/License-MIT-97CA00.svg)](./LICENSE)
 
+`🌐 Language:` [🇪🇸 Español](#es) | [🇬🇧 English](#en)
+
 ![animation-hero-airpodspro2_1](https://github.com/user-attachments/assets/2065d1a2-f730-41cb-9288-6f9afb7c3f3c)
 
 Proyecto de aprendizaje centrado en la recreación de la animación del hero de AirPods Pro 2 de Apple, con foco en animaciones avanzadas con GSAP y sincronización con scroll.
 
-## Demo en vivo
+## 🚀 Demo en vivo
 
 [Ver proyecto desplegado](https://airpods-animation-eight.vercel.app)
 
 ![animation-hero-airpodspro2_2](https://github.com/user-attachments/assets/fe91ddb0-3694-4df7-9df5-afbebcca9470)
 
-## Tecnologías
+## 🛠️ Tecnologías
 
 - Astro
 - GSAP
@@ -25,7 +29,7 @@ Proyecto de aprendizaje centrado en la recreación de la animación del hero de 
 - Canvas API
 - HTML5 y CSS3
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 - Animación de secuencia de imágenes en Canvas sincronizada con el scroll.
 - Header dinámico con comportamiento de ocultación durante el desplazamiento.
@@ -34,14 +38,14 @@ Proyecto de aprendizaje centrado en la recreación de la animación del hero de 
 - Diseño responsive con fidelidad visual respecto a la referencia original.
 - Precarga de 65 frames para mejorar fluidez y rendimiento.
 
-## Instalación y desarrollo
+## 📦 Instalación y desarrollo
 
-### Requisitos
+### ✅ Requisitos
 
 - Node.js 16 o superior
 - npm
 
-### Ejecución local
+### ▶️ Ejecución local
 
 ```bash
 git clone https://github.com/Fr4n0m/airpods-animation.git
@@ -52,7 +56,7 @@ npm run dev
 
 La aplicación quedará disponible en `http://localhost:4321`.
 
-### Scripts disponibles
+### 📜 Scripts disponibles
 
 | Comando           | Descripción                                      |
 | ----------------- | ------------------------------------------------ |
@@ -60,7 +64,7 @@ La aplicación quedará disponible en `http://localhost:4321`.
 | `npm run build`   | Genera la versión de producción en `dist/`       |
 | `npm run preview` | Sirve localmente la build de producción          |
 
-## Estructura del proyecto
+## 🗂️ Estructura del proyecto
 
 ```text
 /
@@ -76,7 +80,7 @@ La aplicación quedará disponible en `http://localhost:4321`.
 └── package.json
 ```
 
-## Objetivo del proyecto
+## 🎯 Objetivo del proyecto
 
 Este trabajo se desarrolló con fines formativos para profundizar en:
 
@@ -86,17 +90,17 @@ Este trabajo se desarrolló con fines formativos para profundizar en:
 - Estrategias de precarga para minimizar parpadeos.
 - Optimización de animaciones para mantener una experiencia fluida.
 
-## Inspiración
+## 💡 Inspiración
 
 Proyecto inspirado en la página oficial de Apple para AirPods Pro 2, replicado exclusivamente con propósito educativo.
 
-## Aviso legal
+## ⚖️ Aviso legal
 
 Este repositorio no tiene fines comerciales. Las imágenes, recursos visuales y marcas asociadas pertenecen a Apple Inc. y se utilizan únicamente con fines de práctica y aprendizaje.
 
 Apple, AirPods y AirPods Pro son marcas registradas de Apple Inc.
 
-## Licencia
+## 📄 Licencia
 
 El código fuente se distribuye bajo licencia MIT. Los recursos visuales y marcas pertenecen a sus respectivos propietarios.
 
@@ -107,19 +111,21 @@ Developed by Francisco Rodriguez - 2025
 
 ---
 
-# AirPods Pro 2 Hero Animation Clone (English)
+<a id="en"></a>
+
+# 🌍 AirPods Pro 2 Hero Animation Clone (English)
 
 ![animation-hero-airpodspro2_1](https://github.com/user-attachments/assets/2065d1a2-f730-41cb-9288-6f9afb7c3f3c)
 
 Learning-focused project that recreates Apple AirPods Pro 2 hero animation, with emphasis on advanced GSAP animation workflows and scroll-based synchronization.
 
-## Live demo
+## 🚀 Live demo
 
 [View deployed project](https://airpods-animation-eight.vercel.app)
 
 ![animation-hero-airpodspro2_2](https://github.com/user-attachments/assets/fe91ddb0-3694-4df7-9df5-afbebcca9470)
 
-## Technologies
+## 🛠️ Technologies
 
 - Astro
 - GSAP
@@ -127,7 +133,7 @@ Learning-focused project that recreates Apple AirPods Pro 2 hero animation, with
 - Canvas API
 - HTML5 and CSS3
 
-## Features
+## ✨ Features
 
 - Canvas image-sequence animation synchronized with scroll.
 - Dynamic header that hides on scroll.
@@ -136,14 +142,14 @@ Learning-focused project that recreates Apple AirPods Pro 2 hero animation, with
 - Responsive layout with visual fidelity to the original reference.
 - Preloading of 65 frames for smoother performance.
 
-## Setup and development
+## 📦 Setup and development
 
-### Requirements
+### ✅ Requirements
 
 - Node.js 16+
 - npm
 
-### Local run
+### ▶️ Local run
 
 ```bash
 git clone https://github.com/Fr4n0m/airpods-animation.git
@@ -154,7 +160,7 @@ npm run dev
 
 The app will be available at `http://localhost:4321`.
 
-### Available scripts
+### 📜 Available scripts
 
 | Command           | Description                                      |
 | ----------------- | ------------------------------------------------ |
@@ -162,7 +168,7 @@ The app will be available at `http://localhost:4321`.
 | `npm run build`   | Builds the production version into `dist/`       |
 | `npm run preview` | Serves the production build locally              |
 
-## Project structure
+## 🗂️ Project structure
 
 ```text
 /
@@ -178,7 +184,7 @@ The app will be available at `http://localhost:4321`.
 └── package.json
 ```
 
-## Project goal
+## 🎯 Project goal
 
 This project was built for learning purposes, with a focus on:
 
@@ -188,16 +194,16 @@ This project was built for learning purposes, with a focus on:
 - Image preloading strategies to avoid flicker.
 - Animation optimization to maintain smooth playback.
 
-## Inspiration
+## 💡 Inspiration
 
 This is an educational clone inspired by the official Apple AirPods Pro 2 webpage.
 
-## Disclaimer
+## ⚖️ Disclaimer
 
 This repository is non-commercial. All images, visual assets, and trademarks belong to Apple Inc. and are used only for educational and practice purposes.
 
 Apple, AirPods, and AirPods Pro are registered trademarks of Apple Inc.
 
-## License
+## 📄 License
 
 The source code is released under the MIT License. Visual assets and trademarks belong to their respective owners.

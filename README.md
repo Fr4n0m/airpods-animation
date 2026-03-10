@@ -1,113 +1,203 @@
-# AirPods Pro 2 - Hero Animation Clone
+# AirPods Pro 2 Hero Animation Clone
+
+[![Astro](https://img.shields.io/badge/Astro-5.15.9-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.13.0-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
+[![ScrollTrigger](https://img.shields.io/badge/GSAP-ScrollTrigger-88CE02)](https://gsap.com/scrolltrigger/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://airpods-animation-eight.vercel.app)
+[![License](https://img.shields.io/badge/License-MIT-97CA00.svg)](./LICENSE)
 
 ![animation-hero-airpodspro2_1](https://github.com/user-attachments/assets/2065d1a2-f730-41cb-9288-6f9afb7c3f3c)
 
-Proyecto de aprendizaje enfocado en dominar animaciones con GSAP (GreenSock Animation Platform) y ScrollTrigger, recreando la animación del hero de la página oficial de Apple para los AirPods Pro 2.
+Proyecto de aprendizaje centrado en la recreación de la animación del hero de AirPods Pro 2 de Apple, con foco en animaciones avanzadas con GSAP y sincronización con scroll.
 
-## 🚀 Demo en Vivo
+## Demo en vivo
 
 [Ver proyecto desplegado](https://airpods-animation-eight.vercel.app)
 
 ![animation-hero-airpodspro2_2](https://github.com/user-attachments/assets/fe91ddb0-3694-4df7-9df5-afbebcca9470)
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías
 
-- **Astro** - Framework web moderno
-- **GSAP** - Librería de animación profesional
-- **ScrollTrigger** - Plugin de GSAP para animaciones basadas en scroll
-- **Canvas API** - Para renderizado de secuencia de imágenes
-- **HTML5 & CSS3** - Estructura y estilos
+- Astro
+- GSAP
+- ScrollTrigger
+- Canvas API
+- HTML5 y CSS3
 
-## ✨ Características
+## Funcionalidades
 
-- ✅ Animación de secuencia de imágenes en Canvas sincronizada con scroll
-- ✅ Header dinámico que se oculta al hacer scroll
-- ✅ SubNav con efecto blur y background al hacer scroll
-- ✅ Animaciones de entrada suaves al cargar la página
-- ✅ Diseño responsive y fiel al original de Apple
-- ✅ Optimización de performance con 65 frames pre-cargados
+- Animación de secuencia de imágenes en Canvas sincronizada con el scroll.
+- Header dinámico con comportamiento de ocultación durante el desplazamiento.
+- SubNav con efecto blur y cambio de fondo en función del scroll.
+- Animaciones de entrada en la carga inicial de la página.
+- Diseño responsive con fidelidad visual respecto a la referencia original.
+- Precarga de 65 frames para mejorar fluidez y rendimiento.
 
-## 📦 Instalación y Desarrollo
+## Instalación y desarrollo
 
-### Requisitos previos
+### Requisitos
 
-- Node.js (v16 o superior)
+- Node.js 16 o superior
 - npm
 
-### Pasos para ejecutar localmente
-
-1. Clona el repositorio
+### Ejecución local
 
 ```bash
 git clone https://github.com/Fr4n0m/airpods-animation.git
 cd airpods-animation
-```
-
-2. Instala las dependencias
-
-```bash
 npm install
-```
-
-3. Inicia el servidor de desarrollo
-
-```bash
 npm run dev
 ```
 
-4. Abre tu navegador en `http://localhost:4321`
+La aplicación quedará disponible en `http://localhost:4321`.
 
-### Comandos disponibles
+### Scripts disponibles
 
-| Comando           | Acción                                             |
-| ----------------- | -------------------------------------------------- |
-| `npm run dev`     | Inicia servidor de desarrollo en `localhost:4321`  |
-| `npm run build`   | Construye el proyecto para producción en `./dist/` |
-| `npm run preview` | Vista previa local del build de producción         |
+| Comando           | Descripción                                      |
+| ----------------- | ------------------------------------------------ |
+| `npm run dev`     | Inicia el servidor de desarrollo                 |
+| `npm run build`   | Genera la versión de producción en `dist/`       |
+| `npm run preview` | Sirve localmente la build de producción          |
 
-## 🎨 Estructura del Proyecto
+## Estructura del proyecto
 
-```
+```text
 /
 ├── public/
-│   └── images/          # Secuencia de 65 frames de AirPods
+│   └── images/             # Secuencia de 65 frames
 ├── src/
 │   ├── components/
 │   │   ├── Header.astro    # Navegación principal y SubNav
-│   │   ├── Hero.astro      # Componente principal con Canvas
+│   │   ├── Hero.astro      # Hero principal con Canvas
 │   │   └── SubNav.astro    # Navegación secundaria
 │   └── pages/
-│       └── index.astro     # Página principal
+│       └── index.astro     # Entrada principal
 └── package.json
 ```
 
-## 📚 Lo que aprendí
+## Objetivo del proyecto
 
-Este proyecto me permitió profundizar en:
+Este trabajo se desarrolló con fines formativos para profundizar en:
 
-- Manejo avanzado de **GSAP Timelines** para sincronizar múltiples animaciones
-- Uso de **ScrollTrigger** con `scrub` para animaciones fluidas vinculadas al scroll
-- Renderizado de secuencias de imágenes en **Canvas** con alta performance
-- Técnicas de **pre-carga de imágenes** para evitar parpadeos
-- Animaciones de entrada con `gsap.fromTo()` y control de `immediateRender`
-- Efectos de **backdrop-filter** y backgrounds dinámicos
-- Optimización de animaciones para mantener 60fps
+- GSAP Timelines y coordinación de animaciones.
+- ScrollTrigger con `scrub` para interacción ligada al scroll.
+- Renderizado de secuencias de imágenes con Canvas.
+- Estrategias de precarga para minimizar parpadeos.
+- Optimización de animaciones para mantener una experiencia fluida.
 
-## 🎯 Inspiración
+## Inspiración
 
-Este proyecto es un clon educativo de la página oficial de Apple para los AirPods Pro 2. Las imágenes y el diseño están inspirados en el sitio web original de Apple.
+Proyecto inspirado en la página oficial de Apple para AirPods Pro 2, replicado exclusivamente con propósito educativo.
 
-## ⚠️ Disclaimer
+## Aviso legal
 
-Este proyecto ha sido creado únicamente con fines educativos y de aprendizaje. No tiene propósitos comerciales. Todas las imágenes y recursos visuales pertenecen a Apple Inc. y se utilizan bajo Fair Use exclusivamente para práctica de desarrollo web.
+Este repositorio no tiene fines comerciales. Las imágenes, recursos visuales y marcas asociadas pertenecen a Apple Inc. y se utilizan únicamente con fines de práctica y aprendizaje.
 
-**Apple, AirPods y AirPods Pro son marcas registradas de Apple Inc.**
+Apple, AirPods y AirPods Pro son marcas registradas de Apple Inc.
 
-## 📄 Licencia
+## Licencia
 
-Este proyecto está bajo la licencia MIT para el código. Los recursos visuales y marcas pertenecen a sus respectivos propietarios.
+El código fuente se distribuye bajo licencia MIT. Los recursos visuales y marcas pertenecen a sus respectivos propietarios.
 
 ---
 
-Desarrollado por Francisco Rodríguez - 2025
-[Visitar Portfolio](https://codebyfran.es)
+Developed by Francisco Rodriguez - 2025  
+[Portfolio](https://codebyfran.es)
+
+---
+
+# AirPods Pro 2 Hero Animation Clone (English)
+
+![animation-hero-airpodspro2_1](https://github.com/user-attachments/assets/2065d1a2-f730-41cb-9288-6f9afb7c3f3c)
+
+Learning-focused project that recreates Apple AirPods Pro 2 hero animation, with emphasis on advanced GSAP animation workflows and scroll-based synchronization.
+
+## Live demo
+
+[View deployed project](https://airpods-animation-eight.vercel.app)
+
+![animation-hero-airpodspro2_2](https://github.com/user-attachments/assets/fe91ddb0-3694-4df7-9df5-afbebcca9470)
+
+## Technologies
+
+- Astro
+- GSAP
+- ScrollTrigger
+- Canvas API
+- HTML5 and CSS3
+
+## Features
+
+- Canvas image-sequence animation synchronized with scroll.
+- Dynamic header that hides on scroll.
+- SubNav with blur and background transition based on scroll position.
+- Intro animations on initial page load.
+- Responsive layout with visual fidelity to the original reference.
+- Preloading of 65 frames for smoother performance.
+
+## Setup and development
+
+### Requirements
+
+- Node.js 16+
+- npm
+
+### Local run
+
+```bash
+git clone https://github.com/Fr4n0m/airpods-animation.git
+cd airpods-animation
+npm install
+npm run dev
+```
+
+The app will be available at `http://localhost:4321`.
+
+### Available scripts
+
+| Command           | Description                                      |
+| ----------------- | ------------------------------------------------ |
+| `npm run dev`     | Starts the development server                    |
+| `npm run build`   | Builds the production version into `dist/`       |
+| `npm run preview` | Serves the production build locally              |
+
+## Project structure
+
+```text
+/
+├── public/
+│   └── images/             # 65-frame image sequence
+├── src/
+│   ├── components/
+│   │   ├── Header.astro    # Main navigation and SubNav
+│   │   ├── Hero.astro      # Main hero with Canvas
+│   │   └── SubNav.astro    # Secondary navigation
+│   └── pages/
+│       └── index.astro     # Main entry page
+└── package.json
+```
+
+## Project goal
+
+This project was built for learning purposes, with a focus on:
+
+- GSAP Timelines and multi-animation orchestration.
+- ScrollTrigger with `scrub` for scroll-linked interaction.
+- Canvas-based image sequence rendering.
+- Image preloading strategies to avoid flicker.
+- Animation optimization to maintain smooth playback.
+
+## Inspiration
+
+This is an educational clone inspired by the official Apple AirPods Pro 2 webpage.
+
+## Disclaimer
+
+This repository is non-commercial. All images, visual assets, and trademarks belong to Apple Inc. and are used only for educational and practice purposes.
+
+Apple, AirPods, and AirPods Pro are registered trademarks of Apple Inc.
+
+## License
+
+The source code is released under the MIT License. Visual assets and trademarks belong to their respective owners.

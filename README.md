@@ -100,6 +100,17 @@ Este repositorio no tiene fines comerciales. Las imágenes, recursos visuales y 
 
 Apple, AirPods y AirPods Pro son marcas registradas de Apple Inc.
 
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Si quieres mejorar animaciones, estructura, rendimiento o documentación, abre un issue o envía una Pull Request.
+
+Antes de enviar cambios:
+
+- Haz un fork del repositorio.
+- Crea una rama descriptiva (`feature/nombre-cambio`).
+- Mantén el estilo del proyecto y verifica que todo funcione.
+- Abre la PR con una descripción clara de lo que cambia y por qué.
+
 ## 📄 Licencia
 
 El código fuente se distribuye bajo licencia MIT. Los recursos visuales y marcas pertenecen a sus respectivos propietarios.
@@ -203,6 +214,17 @@ This is an educational clone inspired by the official Apple AirPods Pro 2 webpag
 This repository is non-commercial. All images, visual assets, and trademarks belong to Apple Inc. and are used only for educational and practice purposes.
 
 Apple, AirPods, and AirPods Pro are registered trademarks of Apple Inc.
+
+## 🤝 Contributing
+
+Contributions are welcome. If you want to improve animations, structure, performance, or documentation, feel free to open an issue or submit a Pull Request.
+
+Before submitting changes:
+
+- Fork the repository.
+- Create a descriptive branch (`feature/change-name`).
+- Keep the existing project style and verify everything works.
+- Open the PR with a clear summary of what changed and why.
 
 ## 📄 License
 
